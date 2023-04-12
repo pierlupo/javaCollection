@@ -8,6 +8,8 @@ import org.example.exceptions.DemoException;
 import org.example.exceptions.DemoExceptionImbrique;
 import org.example.exceptions.DemoThrows;
 import org.example.exceptions.exceptionPerso.CheckMyAge;
+import org.example.stream.Demo1;
+import org.example.stream.Demo2;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +22,10 @@ public class Main {
         //Mapdemo.main();
 
         //DemoException.main();
-        DemoExceptionImbrique.main2();
-
+        //DemoExceptionImbrique.main2();
+        // Demo1.main();
         //CheckMyAge.main();
+        Demo2.main();
 
 
     }
