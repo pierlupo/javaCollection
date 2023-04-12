@@ -2,7 +2,6 @@ package org.example.collections.exercices;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.ListIterator;
 
 public class Exercice1 {
@@ -22,16 +21,15 @@ public class Exercice1 {
         System.out.println("Première solution : ");
         System.out.println(tab);
         System.out.println("Deuxième solution : ");
-        for (int i = 0; i < tab.size(); i++) {
-            System.out.println(tab.get(i));
+        for (Integer value : tab) {
+            System.out.println(value);
         }
         System.out.println("troisième solution : ");
-        Iterator iter = tab.iterator();
-        while (iter.hasNext()){
-            System.out.println("Iterator : "+iter.next());
+        for (Integer integer : tab) {
+            System.out.println("Iterator : " + integer);
         }
         System.out.println("Quatrième solution : ");
-        ListIterator i = tab.listIterator();
+        ListIterator<Integer> i = tab.listIterator();
         while(i.hasNext()){
             System.out.println("nombre : "+i.next());
         }
