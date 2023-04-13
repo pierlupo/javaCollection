@@ -9,7 +9,7 @@ public class Demo1 {
 
         System.out.println("Filter + Count  : ");
         prenoms.stream()
-                .filter(p-> p.startsWith("k"))
+                .filter(p -> p.startsWith("k"))
                 .forEach(System.out::println);
         System.out.println();
         System.out.println("Le nombre de personnes qui commence par un t est de : "+prenoms.stream().filter(p->p.startsWith("t")).count());

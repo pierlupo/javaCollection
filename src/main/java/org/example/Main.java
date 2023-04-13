@@ -1,15 +1,7 @@
 package org.example;
 
-import org.example.collections.exercices.Exercice1;
-import org.example.collections.exercices.Exercice3;
-import org.example.collections.map.Mapdemo;
-import org.example.collections.set.SetDemo;
-import org.example.exceptions.DemoException;
-import org.example.exceptions.DemoExceptionImbrique;
-import org.example.exceptions.DemoThrows;
-import org.example.exceptions.exceptionPerso.CheckMyAge;
-import org.example.stream.Demo1;
-import org.example.stream.Demo2;
+import org.example.designPattern.adapter.DemoAdapter;
+import org.example.designPattern.bridge.DemoBridge;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,8 +17,10 @@ public class Main {
         //DemoExceptionImbrique.main2();
         // Demo1.main();
         //CheckMyAge.main();
-        Demo2.main();
+        //DemoExo.main();
 
+       // DemoAdapter.main();
+        DemoBridge.main();
 
     }
 }

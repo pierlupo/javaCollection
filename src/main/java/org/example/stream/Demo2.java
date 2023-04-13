@@ -19,9 +19,9 @@ public class Demo2 {
                 new Product("ps5", 600, 15475679)));
 
         List<Product> listModifie = productList.stream()
-                .filter(product ->  product.getReference()>12375879)
+                .filter(product -> product.getReference() > 12375879)
                 .map(product -> {
-                    product.setPrice(product.getPrice()*1.20);
+                    product.setPrice(product.getPrice() * 1.20);
                     return product;
                 }).collect(Collectors.toList());
 
@@ -35,18 +35,18 @@ public class Demo2 {
         Cart cart2 = new Cart();
 
         cart0.setProductList(Arrays.asList(productList.get(0)));
-        cart1.setProductList(Arrays.asList(productList.get(1),productList.get(2)));
-        cart2.setProductList(Arrays.asList(productList.get(3),productList.get(4)));
+        cart1.setProductList(Arrays.asList(productList.get(1), productList.get(2)));
+        cart2.setProductList(Arrays.asList(productList.get(3), productList.get(4)));
 
         List<Cart> carts = new ArrayList<>(Arrays.asList(cart0, cart1, cart2));
 
         Product[] products = carts.stream()
-                .flatMap(cart->cart.getProductList().stream())
-                        .filter(product -> product.getReference()>=12375879)
-                        .map(product -> {
-                            product.setPrice(product.getPrice()*1.50);
-                            return product;
-                        }).toArray(Product[]::new);
+                .flatMap(cart -> cart.getProductList().stream())
+                .filter(product -> product.getReference() >= 12375879)
+                .map(product -> {
+                    product.setPrice(product.getPrice() * 1.50);
+                    return product;
+                }).toArray(Product[]::new);
 
         Arrays.stream(products).forEach(System.out::println);
     }
