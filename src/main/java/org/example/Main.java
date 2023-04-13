@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.designPattern.adapter.DemoAdapter;
 import org.example.designPattern.bridge.DemoBridge;
+import org.example.designPattern.observer.DemoObserver;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,8 +20,9 @@ public class Main {
         //CheckMyAge.main();
         //DemoExo.main();
 
-       // DemoAdapter.main();
-        DemoBridge.main();
+        //DemoAdapter.main();
+        //DemoBridge.main();
+        DemoObserver.main();
 
     }
 }
